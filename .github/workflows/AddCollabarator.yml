@@ -1,0 +1,18 @@
+name: add_collabarator
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v1
+      
+      - name: execute shell script 
+        env:
+         GH_TOKEN: ${{ secrets.Servicenow }}
+        run: |
+            chmod +x AddUser.sh
+            ./Adduser.sh
+        shell: bash
