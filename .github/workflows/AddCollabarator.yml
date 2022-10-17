@@ -13,7 +13,7 @@ jobs:
       
       - name: execute shell script 
         env:
-         GH_TOKEN: ${{ secrets.Servicenow }}
+         GH_TOKEN: ${{ secrets.TOKEN }}
         run: |
             chmod +x AddUser.sh
             ./Adduser.sh
