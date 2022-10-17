@@ -9,6 +9,6 @@ USERNAME="ManikandanM7999"
 curl \
   -X PUT \
   -H "Accept: application/vnd.github+json" \
-  -H "Authorization: Bearer ${{secrets.GITHUB_TOKEN}}" \
+  -H "Authorization: Bearer ${{secrets.TOKEN}}" \
   https://api.github.com/repos/${OWNER}/${REPO}/collaborators/${USERNAME} \
   -d "{"permission":"maintainer"}"
