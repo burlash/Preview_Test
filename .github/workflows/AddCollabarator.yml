@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: checkout repo content
         uses: actions/checkout@v1
+        
+      - run: ls
       
       - name: execute shell script 
         env:
