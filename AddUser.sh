@@ -1,9 +1,9 @@
 #!/bin/bash
-ORG="manulife-gwam"
-GH_TOKEN="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"
-OWNER="geochar"
-REPO="arc-basic-java-tpl"
-USERNAME="burlash"
+#ORG="manulife-gwam"
+#GH_TOKEN="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"
+OWNER="burlash"
+REPO="Preview_Test"
+USERNAME="ManikandanM7999"
 
 
 curl \
